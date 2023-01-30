@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
-</head>
-<body>
-  <div><form action="#" method="get">
-    <label for="location">Enter location</label>
-    <input type="text" id="searchBar" name="location" placeholder="Search locations">
-    <button type="submit" id="submitBtn">Submit</button>
-  </form></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>Weather</header>
+    <div id="formContainer">
+      <form action="#" method="get" id="locationForm">
+        <label for="location">Enter location: </label>
+        <input
+          type="text"
+          id="searchBar"
+          name="location"
+          placeholder="Search locations"
+          required
+        />
+        <button id="submitBtn">Submit</button>
+      </form>
+    </div>
+
+    <div id="weatherInfoContainer">
+      <h1 id="locationName"></h1>
+      <p id="temp"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+  </body>
 </html>
