@@ -15,7 +15,7 @@ async function getWeather(location) {
     const weatherData = await response.json();
 
     locationName.textContent = weatherData.name;
-    temp.textContent = `Temperature: ${weatherData.main.temp}F°`;
+    temp.textContent = `${weatherData.main.temp}° F`;
     humidity.textContent = `Humidity: ${weatherData.main.humidity}%`;
     wind.textContent = `Wind: ${weatherData.wind.speed}mph`;
   } catch (err) {
