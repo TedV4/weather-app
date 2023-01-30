@@ -10,27 +10,45 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
+  background-image: linear-gradient(rgb(0, 162, 255), rgb(134, 255, 225));
+  background-attachment: fixed;
 }
 
 header {
   text-align: center;
   align-items: center;
-  padding: 2em;
+  padding: 0.5em;
+  font-size: 3em;
+  font-weight: bold;
+  background: rgb(43, 43, 43, 0.9);
+  color: ghostwhite;
+  width: 100%;
 }
 
 #formContainer {
   text-align: center;
 }
 
+#formContainer input {
+  height: 2em;
+}
+
+#formContainer button {
+  cursor: pointer;
+}
+
 #weatherInfoContainer {
-  margin-top: 1em;
   display: flex;
   flex-direction: column;
   gap: 1em;
   padding: 1em;
-  background: pink;
+  text-align: center;
+  border-radius: 1em;
+  background: rgb(43, 43, 43, 0.9);
+  color: ghostwhite;
 }
 
-#weatherInfoContainer h1 {
-  text-align: center;
+#weatherInfoContainer h2 {
+  font-size: 4em;
 }
