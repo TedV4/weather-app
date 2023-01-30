@@ -2,4 +2,35 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  align-items: center;
+  padding: 2em;
+}
+
+#formContainer {
+  text-align: center;
+}
+
+#weatherInfoContainer {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  background: pink;
+}
+
+#weatherInfoContainer h1 {
+  text-align: center;
 }
